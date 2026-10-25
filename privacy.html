@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy – vialenta-upload</title>
+<meta name="description" content="Informativa sulla privacy dell'applicazione vialenta-upload.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+  <a class="brand" href="./">vialenta-upload</a>
+  <nav><a href="./">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Termini di servizio</a></nav>
+</header>
+
+<h1>Informativa sulla privacy</h1>
+<p class="muted">Ultimo aggiornamento: 25 ottobre 2026</p>
+
+<p>Questa informativa descrive quali dati tratta l'applicazione <strong>vialenta-upload</strong> e come lo fa. L'applicazione è uno strumento personale. La usa solo il proprietario del canale YouTube Vialenta, per gestire il proprio canale.</p>
+
+<h2>1. Dati a cui l'applicazione accede</h2>
+<p>Con l'autorizzazione dell'utente, data tramite Google OAuth, l'applicazione richiede questi permessi:</p>
+<ul>
+  <li><code>youtube.upload</code>: per caricare video sul canale dell'utente.</li>
+  <li><code>youtube</code>: per leggere nome e identificativo del canale, impostare le miniature, aggiungere video alle playlist e leggere lo stato dei video caricati.</li>
+</ul>
+<p>L'applicazione non legge commenti, iscritti, messaggi, cronologia di visualizzazione, dati di pagamento né altri dati dell'account Google. Usa solo i dati necessari alle funzioni elencate.</p>
+
+<h2>2. Come vengono usati i dati</h2>
+<p>I dati servono solo a caricare e configurare i video sul canale dell'utente, su sua richiesta. Non vengono usati per pubblicità, profilazione, analisi di mercato o addestramento di modelli di intelligenza artificiale. Non vengono venduti.</p>
+
+<h2>3. Dove vengono conservati</h2>
+<ul>
+  <li><strong>Token di autorizzazione OAuth</strong>: è conservato sul computer dell'utente (file <code>token.json</code>) oppure come variabile d'ambiente privata nell'ambiente di esecuzione cloud che l'utente usa per lanciare lo script. Non è pubblicato né inserito in repository pubblici.</li>
+  <li><strong>Dati dei video</strong>: titolo, descrizione, identificativo e link dei video caricati. Sono registrati in file di testo e di log nella cartella di lavoro dell'utente, per tenere traccia dei caricamenti.</li>
+</ul>
+<p>L'applicazione non ha un server proprio e non raccoglie dati su server dell'autore.</p>
+
+<h2>4. Condivisione con terzi</h2>
+<p>I dati vengono inviati solo a Google/YouTube, attraverso i Servizi API di YouTube, per eseguire le operazioni richieste. Quando l'utente esegue lo script in un ambiente cloud di terze parti, quell'ambiente esegue il codice per suo conto. Nessun dato viene condiviso con altri soggetti.</p>
+
+<h2>5. Servizi API di YouTube e Google</h2>
+<p>L'applicazione usa i Servizi API di YouTube. L'uso dei dati è conforme alle <a href="https://developers.google.com/terms/api-services-user-data-policy">Norme relative ai dati utente dei servizi API di Google</a>, inclusi i requisiti di uso limitato (Limited Use). Per il trattamento dei dati da parte di Google valgono le <a href="https://policies.google.com/privacy">Norme sulla privacy di Google</a>.</p>
+
+<h2>6. Conservazione e cancellazione</h2>
+<p>Il token resta valido finché l'utente non lo revoca. I file di log e di registro restano nella cartella dell'utente finché lui non li cancella. Per eliminare tutti i dati basta:</p>
+<ul>
+  <li>revocare l'accesso dell'applicazione dalla pagina <a href="https://security.google.com/settings/security/permissions">Autorizzazioni dell'account Google</a>;</li>
+  <li>cancellare il file <code>token.json</code>, le variabili d'ambiente in cui è salvato il token e le cartelle di log.</li>
+</ul>
+
+<h2>7. Cookie e sito web</h2>
+<p>Queste pagine informative non usano cookie, strumenti di analisi o tracciamento.</p>
+
+<h2>8. Modifiche</h2>
+<p>Se l'applicazione cambierà il modo in cui tratta i dati, questa pagina verrà aggiornata, insieme alla data in alto.</p>
+
+<h2>9. Contatti</h2>
+<p>Per domande sulla privacy: <a href="mailto:TUA-EMAIL">TUA-EMAIL</a></p>
+
+<footer>vialenta-upload · <a href="./">Home</a> · <a href="terms.html">Termini di servizio</a></footer>
+</main>
+</body>
+</html>
